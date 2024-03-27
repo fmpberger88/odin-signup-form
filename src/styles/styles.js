@@ -5,8 +5,9 @@ export const MainContainer = styled.main`
     height: 100vh;
     
     // Media Query for screens less than 768px
-    @media screen and (max-width: 768px) {
-        
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: auto;
     }
 `
 
@@ -36,6 +37,10 @@ export const AsideContainer = styled.aside`
             font-size: clamp(3rem, 6vw, 6rem);
         }
     }
+    
+    @media screen and (max-width: 768px){
+        height: 400px;
+    }
 `
 
 export const SignupContainer = styled.section`
@@ -47,6 +52,11 @@ export const SignupContainer = styled.section`
     & p {
         font-size: 1.125rem;
         margin: 0 30px;
+        
+        @media screen and (max-width: 768px) {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
     & form {
         display: flex;
@@ -89,8 +99,30 @@ export const SignupContainer = styled.section`
         align-self: flex-start;
         justify-self: flex-start;
     }
-}
-    
+
     & .link-to-login {
         font-weight: bold;
+    }
+    
+    @media screen and (max-width: 768px) {
+        & form {
+            justify-content: center;
+            & div {
+                width: 60%;
+                
+                & label {
+                    font-size: 1rem;
+                }
+                
+                & input {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+    
+    & .linkContainer {
+        justify-self: center;
+        align-self: center;
+    }
 `
