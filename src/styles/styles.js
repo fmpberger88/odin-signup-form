@@ -3,6 +3,11 @@ import styled from '@emotion/styled'
 export const MainContainer = styled.main`
     display: flex;
     height: 100vh;
+    
+    // Media Query for screens less than 768px
+    @media screen and (max-width: 768px) {
+        
+    }
 `
 
 export const AsideContainer = styled.aside`
@@ -14,6 +19,23 @@ export const AsideContainer = styled.aside`
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    & div {
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 5px;
+
+        & h1 {
+            font-weight: bold;
+            font-family: Norse-Bold, sans-serif;
+            font-size: clamp(3rem, 6vw, 6rem);
+        }
+    }
 `
 
 export const SignupContainer = styled.section`
@@ -58,6 +80,7 @@ export const SignupContainer = styled.section`
                 background-color: #701C14;
                 font-weight: bold;
                 color: white;
+                width: 50%;
             }
         }
     }

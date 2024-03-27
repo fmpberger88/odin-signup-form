@@ -1,11 +1,15 @@
 import SignupForm from "../components/SignupForm.jsx";
 import {AsideContainer, MainContainer, SignupContainer} from "../styles/styles.js";
+import odin from '/public/odin-lined.png';
 
 export default function Signup() {
     return (
         <MainContainer>
             <AsideContainer>
-                <>Logo</>
+                <div>
+                    <img src={odin} width="100"/>
+                    <h1>Odin</h1>
+                </div>
             </AsideContainer>
             <SignupContainer>
                 <div>

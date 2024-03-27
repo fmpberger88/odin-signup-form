@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url("../src/assets/font/Norse-Bold.otf");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url("../src/assets/font/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url("../src/assets/font/Roboto/Roboto-Bold.ttf");
+}
