@@ -38,7 +38,8 @@ export default function SignupForm() {
         <form onSubmit={onSubmit}>
             <div>
                 <label htmlFor="firstname">FIRST NAME<sup>*</sup></label>
-                <input type="text" name="firstname" id="firstname" required onChange={e => setFirstName(e.target.value)}/>
+                <input type="text" name="firstname" id="firstname" required
+                       onChange={e => setFirstName(e.target.value)}/>
             </div>
             <div>
                 <label htmlFor="lastname">LAST NAME<sup>*</sup></label>
@@ -54,11 +55,13 @@ export default function SignupForm() {
             </div>
             <div>
                 <label htmlFor="password">PASSWORD<sup>*</sup></label>
-                <input type="password" name="password" id="password" required onChange={e => setPassword(e.target.value)}/>
+                <input type="password" name="password" id="password" required
+                       onChange={e => setPassword(e.target.value)}/>
             </div>
             <div>
                 <label htmlFor="confirm-password">CONFIRM PASSWORD<sup>*</sup></label>
-                <input type="password" name="confirm-password" id="confirm-password" required onChange={e => setConfirmPassword(e.target.value)}/>
+                <input type="password" name="confirm-password" id="confirm-password" required
+                       onChange={e => setConfirmPassword(e.target.value)}/>
             </div>
             <div>
                 <button type="submit">Sign Up</button>

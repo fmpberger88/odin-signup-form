@@ -64,6 +64,7 @@ export const SignupContainer = styled.section`
         padding: 30px;
         gap: 30px;
         background-color: white;
+        
         & div {
             display: flex;
             flex-direction: column;
@@ -94,15 +95,7 @@ export const SignupContainer = styled.section`
             }
         }
     }
-    
-    & .linkContainer {
-        align-self: flex-start;
-        justify-self: flex-start;
-    }
 
-    & .link-to-login {
-        font-weight: bold;
-    }
     
     @media screen and (max-width: 768px) {
         & form {
@@ -120,9 +113,12 @@ export const SignupContainer = styled.section`
             }
         }
     }
+`
+
+export const LoginDiv = styled.div`
+    align-self: flex-start;
     
-    & .linkContainer {
-        justify-self: center;
+    @media screen and (max-width: 768px) {
         align-self: center;
     }
 `
