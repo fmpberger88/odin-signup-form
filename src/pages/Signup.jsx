@@ -1,6 +1,6 @@
 import SignupForm from "../components/SignupForm.jsx";
 import {AsideContainer, LoginDiv, MainContainer, SignupContainer} from "../styles/styles.js";
-import odin from '/public/odin-lined.png';
+import odin from '/odin-lined.png';
 
 export default function Signup() {
     return (

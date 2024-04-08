@@ -111,7 +111,7 @@ export const SignupContainer = styled.section`
                     padding: 5px 0;
                 }
             }
-        }
+        n
     }
 `
 
